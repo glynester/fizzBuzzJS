@@ -4,7 +4,7 @@ describe("FizzBuzz", function() {
 
   describe("prints numbers",function(){
     it("divisible by 15", function(){
-	// fizzBuzz = new FizzBuzz();
+	fizzBuzz = new FizzBuzz();
       expect(fizzBuzz.play(15)).toEqual('Fizzbuzz');
     });
   });
