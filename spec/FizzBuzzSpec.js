@@ -24,4 +24,10 @@ describe("FizzBuzz", function() {
     });
   });
 
+  describe("normal numbers", function(){
+    it("returns numbers not devisible by 3 or 5", function(){
+      expect(fizzBuzz.play(23)).toEqual(23);
+    });
+  });
+
 });
