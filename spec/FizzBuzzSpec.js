@@ -2,17 +2,26 @@ describe("FizzBuzz", function() {
 
   var fizzBuzz;
 
-  describe("prints numbers",function(){
+  beforeEach(function(){
+    fizzBuzz = new FizzBuzz();
+  });
+
+  describe("divisible by 5 and 3",function(){
     it("divisible by 15", function(){
-	fizzBuzz = new FizzBuzz();
       expect(fizzBuzz.play(15)).toEqual('Fizzbuzz');
     });
   });
+
+  describe("divisible by 3", function(){
+    it("divisible by 3", function(){
+      expect(fizzBuzz.play(3)).toEqual('Fizz');
+    });
+  });
+
+  describe("divisible by 5", function(){
+    it("divisible by 5", function(){
+      expect(fizzBuzz.play(5)).toEqual('Buzz');
+    });
+  });
+
 });
-
-
-
-// describe('multiples of 3', function() {
-//     it('fizzes for 3', function() {
-//       expect(fizzBuzz.play(3)).toEqual('fizz');
-//     });
